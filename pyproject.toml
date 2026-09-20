@@ -25,6 +25,9 @@ dependencies = [
 [project.entry-points.tracklab_plugin]
 sn_gamestate = "sn_gamestate.config_finder:ConfigFinder"
 
+[project.scripts]
+tracklab-cpu = "sn_gamestate.run_cpu:main"
+
 [build-system]
 requires = ["setuptools>=42"]
 build-backend = "setuptools.build_meta"
